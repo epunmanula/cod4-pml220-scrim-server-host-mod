@@ -1,13 +1,13 @@
-# ⚡ HAVOC COD4 PROMOD SCRIM SERVER ⚡
+# ⚡ COD4 PROMOD SCRIM SERVER ⚡
 
 <p align="center">
   <img src="https://img.shields.io/badge/Game-CoD4%20MW-orange?style=for-the-badge&logo=activision" alt="Call of Duty 4">
   <img src="https://img.shields.io/badge/Mod-Promod%20Live%20v2.20-blue?style=for-the-badge&logo=gamedeveloper" alt="Promod Live">
   <img src="https://img.shields.io/badge/Version-PPC%20LIVE%20V2.21%20EU-red?style=for-the-badge" alt="PPC Version">
-  <img src="https://img.shields.io/badge/Location-Sri%20Lanka%20🇱🇰-green?style=for-the-badge" alt="Sri Lanka">
+  <img src="https://img.shields.io/badge/Location-YourCountry-green?style=for-the-badge" alt="Location">
 </p>
 
-Welcome to the official repository for the **HAVOC CoD4 Promod Scrim Server mod** (`pml220`). This mod is a highly customized version of Call of Duty 4 Promod Live, tailored specifically for competitive matches, scrims, and public matches in Sri Lanka. It features custom GSC scripts for automated server checks, predefined gameplay variables, and a customized ruleset for balanced competition.
+Welcome to the official repository for the **CoD4 Promod Scrim Server mod** (`pml220`). This mod is a highly customized version of Call of Duty 4 Promod Live, tailored specifically for competitive matches, scrims, and public matches. It features custom GSC scripts for automated server checks, predefined gameplay variables, and a customized ruleset for balanced competition.
 
 ---
 
@@ -78,7 +78,7 @@ This provides pre-balanced variables for all game types, including **Search & De
 
 ## 🚀 Installation Guide
 
-Installing the HAVOC Promod Mod is extremely simple. Follow the steps below based on your server's Operating System.
+Installing the Promod Mod is extremely simple. Follow the steps below based on your server's Operating System.
 
 ### Windows Server Setup
 
@@ -125,18 +125,18 @@ The `server.cfg` controls the server identity, map rotation, and connection deta
 ### Crucial Variables to Modify:
 *   **Server Hostname (`sv_hostname`):** Sets the name displayed in the server browser.
     ```gsc
-    set sv_hostname "^2HAVOC ^7SCRIM ^1SERVER" // E.g., Green & Red colored title
+    set sv_hostname "^2YOUR ^7SCRIM ^1SERVER" // E.g., Green & Red colored title
     ```
 *   **Admin Details:** Set yourself as the server administrator.
     ```gsc
-    sets _Admin "24K_Me"
-    sets _Website "24KME.RF.GD"
-    sets _Location "SRI LANKA"
+    sets _Admin "YourAdminName"
+    sets _Website "www.yourwebsite.com"
+    sets _Location "YourCountry"
     ```
 *   **Passwords:**
-    *   `g_password` : Set the password required to join the server (Default: `havoc12345`).
-    *   `rcon_password` : Set the console control password (Default: `zeneztemp`). **Change this immediately!**
-    *   `sv_privatePassword` : Password for private slots (Default: `12345ggwp`).
+    *   `g_password` : Set the password required to join the server (Default: `your_server_password_here`).
+    *   `rcon_password` : Set the console control password (Default: `your_rcon_password_here`). **Change this immediately!**
+    *   `sv_privatePassword` : Password for private slots (Default: `your_private_password_here`).
 *   **Map Rotation (`sv_mapRotation`):**
     Currently configured to rotate standard Promod scrim maps:
     `Backlot`, `Citystreets (District)`, `Crash`, `Crossfire`, and `Strike`.
@@ -190,12 +190,12 @@ You can dynamically change server rules and behavior using `promod_mode`. Use RC
 
 ## 👥 Credits & Contacts
 
-*   **Server Owner & Admin:** `24K_Me` 👑
+*   **Server Owner & Admin:** `YourAdminName` 👑
 *   **Scripter & Developer:** `JEENNN:]` 💻
-*   **Official Website:** [24KME.RF.GD](http://24KME.RF.GD) 🌐
-*   **Location:** Sri Lanka 🇱🇰
+*   **Official Website:** [www.yourwebsite.com](http://www.yourwebsite.com) 🌐
+*   **Location:** YourCountry 🌍
 
 ---
 <p align="center">
-  <b>⚡ Powered by Havoc Esports Network ⚡</b>
+  <b>⚡ Powered by Your Esports Network ⚡</b>
 </p>
