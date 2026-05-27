@@ -20,7 +20,8 @@ Welcome to the official repository for the **CoD4 Promod Scrim Server mod** (`pm
 4. [🛠️ Server Configuration (`server.cfg`)](#%EF%B8%8F-server-configuration-servercfg)
 5. [🎮 Ruleset Customization](#-ruleset-customization)
 6. [🗣️ Promod Commands & Modes](#%EF%B8%8F-promod-commands--modes)
-7. [👥 Credits & Contacts](#-credits--contacts)
+7. [⚡ Essential CoD4 RCON Commands](#-essential-cod4-rcon-commands)
+8. [👥 Credits & Contacts](#-credits--contacts)
 
 ---
 
@@ -185,6 +186,47 @@ You can dynamically change server rules and behavior using `promod_mode`. Use RC
 > [!IMPORTANT]
 > When executing a new mode via RCON, you must restart the map for settings to apply:
 > `/rcon map_restart` or `/rcon fast_restart`
+
+---
+
+## ⚡ Essential CoD4 RCON Commands
+
+To manage your server in-game, you need to use the **RCON (Remote Console)**. Open your developer console (`~` key) and log in first:
+
+```gsc
+/rcon login your_rcon_password
+```
+
+Once logged in, you can run the following commands in-game:
+
+### ⚙️ Server Controls
+| Command | Description |
+| :--- | :--- |
+| `/rcon status` | Shows list of connected players, slot IDs, pings, IPs, and GUIDs. |
+| `/rcon map_restart` | Fully restarts the current map (reloads scripts and models). |
+| `/rcon fast_restart` | Instantly restarts the current round (faster, doesn't reload models). |
+| `/rcon map <mapname>` | Changes the current map (e.g. `/rcon map mp_crash`). |
+| `/rcon map_rotate` | Loads the next map in the `sv_mapRotation` queue. |
+| `/rcon serverinfo` | Displays current server configuration settings. |
+
+### 👥 Player Management
+| Command | Description |
+| :--- | :--- |
+| `/rcon kick <playername>` | Kicks a player from the server by their name. |
+| `/rcon kick <slot_id>` | Kicks a player using their slot ID (find ID using `/rcon status`). |
+| `/rcon banUser <playername>` | Permanently bans a player by their name. |
+| `/rcon banUser <slot_id>` | Permanently bans a player by their slot ID. |
+| `/rcon tempBanUser <slot_id>`| Temporarily bans a player from the server. |
+| `/rcon banIP <IP_address>` | Bans a specific IP address. |
+| `/rcon unbanall` | Unbans all banned players and IPs. |
+
+### 💬 Broadcast & Messaging
+| Command | Description |
+| :--- | :--- |
+| `/rcon say "your message"` | Prints a message in the center of the screen as **Console** for everyone to see. |
+
+> [!TIP]
+> Always use slot IDs (e.g., `/rcon kick 3`) instead of names to kick or ban players who are using colored names or symbols, as their names can be difficult to type.
 
 ---
 
