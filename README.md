@@ -228,6 +228,35 @@ Once logged in, you can run the following commands in-game:
 > [!TIP]
 > Always use slot IDs (e.g., `/rcon kick 3`) instead of names to kick or ban players who are using colored names or symbols, as their names can be difficult to type.
 
+### 🗺️ Promod Scrim & Stock Maps Quick-Switch
+
+Here are the exact RCON commands for all standard Call of Duty 4 maps. You can copy and paste these directly into your in-game console:
+
+| Map Name | In-Game Codename | Quick-Switch RCON Command (Copy & Paste) |
+| :--- | :--- | :--- |
+| **Backlot** 🏢 | `mp_backlot` | `/rcon map mp_backlot` |
+| **Crash** 🚁 | `mp_crash` | `/rcon map mp_crash` |
+| **Crossfire** ⚔️ | `mp_crossfire` | `/rcon map mp_crossfire` |
+| **District (Citystreets)** 🏙️ | `mp_citystreets` | `/rcon map mp_citystreets` |
+| **Strike** 🏜️ | `mp_strike` | `/rcon map mp_strike` |
+| **Vacant** 🏢 | `mp_vacant` | `/rcon map mp_vacant` |
+| **Crash Winter** ❄️ | `mp_crash_snow` | `/rcon map mp_crash_snow` |
+| **Broadcast** 📺 | `mp_broadcast` | `/rcon map mp_broadcast` |
+| **Chinatown (Carentan)** 🏮 | `mp_carentan` | `/rcon map mp_carentan` |
+| **Killhouse** 🏕️ | `mp_killhouse` | `/rcon map mp_killhouse` |
+| **Pipeline** 🏭 | `mp_pipeline` | `/rcon map mp_pipeline` |
+| **Showdown** 🕌 | `mp_showdown` | `/rcon map mp_showdown` |
+| **Overgrown** 🌾 | `mp_overgrown` | `/rcon map mp_overgrown` |
+| **Shipment** 📦 | `mp_shipment` | `/rcon map mp_shipment` |
+| **Bog** 🗑️ | `mp_bog` | `/rcon map mp_bog` |
+| **Ambush** 🚛 | `mp_convoy` | `/rcon map mp_convoy` |
+| **Countdown** 🚀 | `mp_countdown` | `/rcon map mp_countdown` |
+| **Downpour** 🌧️ | `mp_farm` | `/rcon map mp_farm` |
+| **Creek** ⛰️ | `mp_creek` | `/rcon map mp_creek` |
+| **Bloc** 🏢 | `mp_bloc` | `/rcon map mp_bloc` |
+| **Wet Work** 🚢 | `mp_wetwork` | `/rcon map mp_wetwork` |
+| **Cargo** 🚢 | `mp_cargo` | `/rcon map mp_cargo` |
+
 ---
 
 ## 👥 Credits & Contacts
