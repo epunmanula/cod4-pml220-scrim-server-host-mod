@@ -21,7 +21,8 @@ Welcome to the official repository for the **CoD4 Promod Scrim Server mod** (`pm
 5. [🎮 Ruleset Customization](#-ruleset-customization)
 6. [🗣️ Promod Commands & Modes](#%EF%B8%8F-promod-commands--modes)
 7. [⚡ Essential CoD4 RCON Commands](#-essential-cod4-rcon-commands)
-8. [👥 Credits & Contacts](#-credits--contacts)
+8. [📸 Real-time Screenshot Dashboard (SS Site)](#-real-time-screenshot-dashboard-ss-site)
+9. [👥 Credits & Contacts](#-credits--contacts)
 
 ---
 
@@ -256,6 +257,41 @@ Here are the exact RCON commands for all standard Call of Duty 4 maps. You can c
 | **Bloc** 🏢 | `mp_bloc` | `/rcon map mp_bloc` |
 | **Wet Work** 🚢 | `mp_wetwork` | `/rcon map mp_wetwork` |
 | **Cargo** 🚢 | `mp_cargo` | `/rcon map mp_cargo` |
+
+---
+
+## 📸 Real-Time Screenshot Dashboard (SS Site)
+
+This repository contains a fully integrated, modern, glassmorphic **Screenshot Dashboard** (`ss_site`) that allows players and admins to view in-game screenshots in real-time.
+
+### ⚙️ How it Works
+1. **Capture:** An administrator triggers `/rcon getss <slot_id>` in-game.
+2. **Storage:** The CoD4 server captures the player's screen and saves the `.jpg` inside the `screenshots/` directory.
+3. **Detection:** The Node.js server automatically detects the new file instantly via the `chokidar` module.
+4. **Push Update:** The new screenshot is pushed to all connected web clients in real-time using **WebSockets (Socket.io)**—no page reload required!
+5. **Anti-Cheat Inspection:** Open the screenshot in the web gallery to use the **Precision Zoom Inspector** (hover scale) to look for wallhacks, overlays, or aimbot indicators.
+
+### 🚀 Installation & Setup
+Open your console (PowerShell / Command Prompt / Terminal) inside the `ss_site` directory and run:
+
+```bash
+# Navigate to the dashboard directory
+cd ss_site
+
+# Install all backend and frontend dependencies
+npm install
+
+# Start the Express & WebSocket server
+npm start
+```
+
+Once started, open your web browser and go to:
+```url
+http://localhost:3000
+```
+
+> [!NOTE]
+> Ensure your CoD4 server is saving screenshots in the `screenshots/` folder. The dashboard automatically reads files from `../screenshots`. You can edit the path inside `server.js` (Line 20) if needed.
 
 ---
 
