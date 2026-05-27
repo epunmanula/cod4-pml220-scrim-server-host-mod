@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>⚡ CoD4 Promod Live Screenshot Dashboard</title>
+  <!-- Google Fonts (Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Blur Orbs -->
+  <div class="blur-orb orb-1"></div>
+  <div class="blur-orb orb-2"></div>
+  <div class="blur-orb orb-3"></div>
+
+  <div class="container">
+    <!-- Header Section -->
+    <header class="glass-card">
+      <div class="logo-area">
+        <div class="neon-badge">PROMOD LIVE</div>
+        <h1>⚡ HAVOC SCREENSHOT <span class="gradient-text">DASHBOARD</span></h1>
+        <p>Real-time player screenshot capture & anti-cheat transparency portal</p>
+      </div>
+      <div class="server-status">
+        <div class="status-indicator">
+          <span class="pulse-dot"></span>
+          <span class="status-text">LIVE STREAM ACTIVE</span>
+        </div>
+        <div class="stat-boxes">
+          <div class="stat-box">
+            <span class="stat-number" id="total-ss">0</span>
+            <span class="stat-label">Screenshots</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Controls Area (Search & Live Logs) -->
+    <div class="controls-wrapper">
+      <!-- Search & Filters -->
+      <div class="glass-card controls-card">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input type="text" id="search-input" placeholder="Search by Player GUID or name...">
+        </div>
+        <div class="filter-actions">
+          <button class="btn btn-secondary active" id="btn-all">All Screenshots</button>
+          <button class="btn btn-primary" id="btn-refresh"><i class="fa-solid fa-rotate"></i> Refresh</button>
+        </div>
+      </div>
+
+      <!-- Realtime Activity Log ticker -->
+      <div class="glass-card ticker-card">
+        <h3><i class="fa-solid fa-bolt neon-icon"></i> Live Feed Activity</h3>
+        <ul class="activity-list" id="activity-log">
+          <li class="empty-log">Awaiting server screenshot commands...</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <main class="gallery-container">
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- Skeleton Loaders or empty message -->
+        <div class="loading-spinner">
+          <i class="fa-solid fa-circle-notch fa-spin"></i> Loading screenshots...
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Havoc Esports Network. All rights reserved. Admin: <b>24K_Me</b> | Built by <b>Antigravity</b>.</p>
+    </footer>
+  </div>
+
+  <!-- Interactive Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox">
+    <span class="close-lightbox" id="lightbox-close">&times;</span>
+    
+    <div class="lightbox-content-wrapper">
+      <div class="lightbox-image-container">
+        <!-- Zoom Helper Overlay -->
+        <div class="zoom-helper"><i class="fa-solid fa-magnifying-glass-plus"></i> Move mouse over image to inspect closely</div>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="Screenshot Fullscreen">
+      </div>
+      
+      <div class="lightbox-details glass-card">
+        <h2>🔍 SCREENSHOT INSPECTION PANEL</h2>
+        <hr class="divider">
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-id-card"></i> Player SteamID / GUID</span>
+          <span class="detail-val neon-text" id="detail-guid">-</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-calendar-days"></i> Captured Date</span>
+          <span class="detail-val" id="detail-date">-</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-clock"></i> Captured Time</span>
+          <span class="detail-val" id="detail-time">-</span>
+        </div>
+        <div class="detail-item">
+          <span class="detail-label"><i class="fa-solid fa-file-signature"></i> Filename</span>
+          <span class="detail-val filename-val" id="detail-filename">-</span>
+        </div>
+        
+        <div class="lightbox-actions">
+          <a href="" id="btn-download" download class="btn btn-secondary"><i class="fa-solid fa-download"></i> Download Full Image</a>
+          <button class="btn btn-danger" id="btn-close-panel"><i class="fa-solid fa-xmark"></i> Close Viewer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Socket.io client script -->
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- Main Script -->
+  <script src="app.js"></script>
+</body>
+</html>

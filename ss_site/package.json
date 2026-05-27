@@ -1,0 +1,17 @@
+{
+  "name": "cod4-promod-ss-site",
+  "version": "1.0.0",
+  "description": "Real-time Screenshot Dashboard for Call of Duty 4 Promod Scrim Servers",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "chokidar": "^3.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "author": "24K_Me & Antigravity",
+  "license": "MIT"
+}
