@@ -1,10 +1,10 @@
-# ⚡ COD4 PROMOD SCRIM SERVER ⚡
+# ⚡ HAVOC COD4 PROMOD SCRIM SERVER ⚡
 
 <p align="center">
   <img src="https://img.shields.io/badge/Game-CoD4%20MW-orange?style=for-the-badge&logo=activision" alt="Call of Duty 4">
   <img src="https://img.shields.io/badge/Mod-Promod%20Live%20v2.20-blue?style=for-the-badge&logo=gamedeveloper" alt="Promod Live">
   <img src="https://img.shields.io/badge/Version-PPC%20LIVE%20V2.21%20EU-red?style=for-the-badge" alt="PPC Version">
-  <img src="https://img.shields.io/badge/Location-YourCountry-green?style=for-the-badge" alt="Location">
+  <img src="https://img.shields.io/badge/Location-Sri%20Lanka%20🇱🇰-green?style=for-the-badge" alt="Sri Lanka">
 </p>
 
 Welcome to the official repository for the **CoD4 Promod Scrim Server mod** (`pml220`). This mod is a highly customized version of Call of Duty 4 Promod Live, tailored specifically for competitive matches, scrims, and public matches. It features custom GSC scripts for automated server checks, predefined gameplay variables, and a customized ruleset for balanced competition.
@@ -190,12 +190,12 @@ You can dynamically change server rules and behavior using `promod_mode`. Use RC
 
 ## 👥 Credits & Contacts
 
-*   **Server Owner & Admin:** `YourAdminName` 👑
+*   **Server Owner & Admin:** `24K_Me` 👑
 *   **Scripter & Developer:** `JEENNN:]` 💻
-*   **Official Website:** [www.yourwebsite.com](http://www.yourwebsite.com) 🌐
-*   **Location:** YourCountry 🌍
+*   **Official Website:** [24KME.RF.GD](http://24KME.RF.GD) 🌐
+*   **Location:** Sri Lanka 🇱🇰
 
 ---
 <p align="center">
-  <b>⚡ Powered by Your Esports Network ⚡</b>
+  <b>⚡ Powered by Havoc Esports Network ⚡</b>
 </p>
